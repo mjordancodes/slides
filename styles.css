@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:700');
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1000px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Josefin Slab', serif;
+  font-size: 2em;
+}
+
+.slides {
+  width: 100vw;
+  height: 800px;
+  max-height: 100vh;
+  position: absolute;
+  left: 0;
+}
+
+.hint {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 600px))
+}
+.event p {
+  margin: 0;
+  padding: 0;
+}
