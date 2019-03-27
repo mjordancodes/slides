@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Crash Course in Getting Started with CSS Animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>CSS Animations</h1>
+  <div id="slide">
+    <div class="text resources">
+      <h3>Resources</h3>
+      <ul>
+        <li>
+          <a href="https://cssanimation.rocks/">CSS Animation Rocks</a><br />
+          Weekly newsletter with articles, tips, adn tutorials. Courses: Animation 101(Free!) and Level Up your CSS Animation Skills($49). 
+        </li>
+        <li>
+          <a href="https://thoughtbot.com/blog/css-animation-for-beginners">CSS Animation for Beginners</a><br />
+          Handy article with great visuals and code examples.
+        </li>
+        <li>
+          <a href="https://daneden.github.io/animate.css/">Animate.css</a><br />
+          CSS Animation library that makes it super simple to add fun animations to your site quickly.
+        </li>
+      </ul>
+      </div>
+  </div>
+  <div class="by">
+    by @mJordanCodes
+  </div>
+    
+
+    
+    <a href="/slide11.html" id="prev">
+      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 487.622 487.622" style="enable-background:new 0 0 487.622 487.622;" xml:space="preserve">
+        <g>
+          <g>
+            <circle style="fill:#65B3AD;" cx="243.811" cy="243.811" r="243.811"/>
+            <path style="opacity:0.37;fill:#56A49E;enable-background:new    ;" d="M486.616,265.883L342.708,109.972L154.799,243.811
+              l-43.905-0.001l213.312,230.227C412.704,443.134,477.93,362.66,486.616,265.883z"/>
+            <polygon style="fill:#FFFFFF;" points="342.708,109.972 342.708,207.477 301.312,207.477 301.312,181.674 193.688,243.81 
+              301.312,305.947 301.312,280.373 342.708,280.373 342.708,377.65 110.894,243.81 		"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    
+
+    
+  
+  <script>
+    const codeBtn = document.getElementById('show-code')
+    const codeImg = document.getElementById('code-img')
+    codeBtn.addEventListener('click', function() {
+      codeImg.classList.toggle('show');
+    })
+
+    const button = document.getElementById('css-animation');
+    const car = document.getElementById('car');
+
+    button.addEventListener('click', function() {
+      car.classList.add('animate')
+    })
+  </script>    
+</body>
+</html>
