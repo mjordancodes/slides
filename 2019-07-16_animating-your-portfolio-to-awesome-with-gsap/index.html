@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Animating your Portfolio to Awesome with GSAP</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			.reveal .slides {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides h4,
+.reveal .slides h5,
+.reveal .slides h6 {
+  font-family: 'Poiret One', sans-serif;
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-josefine theme-color-mint-beige">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="83cf232740a26ffc14c74d54211a9bdf" data-background-image="animating-your-portfolio-to-awesome-with-gsap/6df263534a6a8fb51fb87b7d66de4566.jpg" data-background-color="rgb(206,205,204)"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 140px; height: auto;" data-block-id="677afbe6d49dc2de2b69e40cd8a9fba8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="color: rgb(68, 68, 68); z-index: 10;">
+<h1>Animating your Portfolio to Awesome with <span style="color:#008000">Greensock</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 240px; left: 375px; top: 597px;" data-block-id="ab6337ab20f4c9514ab60e0f06e73f96"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre><span style="color:#696969">@mJordanCodes</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 475px; left: 243px; top: 515px;" data-block-id="36ea2a5d32b2efdb027ae8db23d1e378"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 79%;">
+<p><span style="color:#696969">by</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 546px;" data-block-id="2370831208898c948e54d3a45af40ee8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(106, 168, 79);">
+<h3>Jordan Brady</h3>
+</div></div></section><section class="stack" data-id="15365e8c675f1b9761ce35c999c23320"><section data-id="9e8d3ffd1195db994731c849a8f044ac"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 192px; height: 648px; left: 38px; top: 30px;" data-block-id="37fabbf9de427937505cc9c41c869d81"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="400" data-natural-height="1350" data-lazy-loaded="" data-src="animating-your-portfolio-to-awesome-with-gsap/775e10480f397ca84451515f3f35c909.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 260px; top: 42px;" data-block-id="03dab3d95eb324d9e6bf0c5ce22fb150"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h1>Hi! I'm Jordan</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 280px; top: 320px;" data-block-id="ae4b040dfeba65fed26c79923b4d456c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:0.7em"><a href="https://twitter.com/mjordancodes" target="_blank">Twitter</a> / <a href="https://github.com/mjordancodes" target="_blank">Github</a> / <a href="https://www.instagram.com/mjordancodes/" target="_blank">Instagram</a> / <a href="https://codepen.io/mjordancodes/#" target="_blank">Codepen</a></span></p>
+
+<p>@mJordanCodes</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 280px; top: 440px;" data-block-id="6f2eeef998f161adebc263fefb7588f5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><span style="font-size:0.7em">email:</span> hi@mJordan.codes</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 280px; top: 510px;" data-block-id="ddd680683a2b647cbc8e4a3e4317714d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><span style="font-size:0.7em">website:</span> <a href="https://mjordan.codes/" target="_blank">mJordan.codes</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 280px; top: 180px;" data-block-id="917feaedb20a309974145b678a3e68c2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>I love to nerd about anything CSS, Animations, my puppies, and Gatsby. Find me online and let's chat?</p>
+</div></div></section><section data-id="efe32b6a4d1536f20200f8d016f2d1e7"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 249px;" data-block-id="9afa60bad47fa5c50ca48923fc1de70e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 144%;">
+<p><a href="https://mjordan.codes/talk/greensock-portfolio" target="_blank">Slides</a>: bit.ly/GSAP-slides</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 325px;" data-block-id="1c414152960ac7ed72e83fee19eb9d5e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 144%;">
+<p><a href="http://bit.ly/GSAP-examples" target="_blank">Code Examples</a>: bit.ly/GSAP-examples</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 401px;" data-block-id="e7bd2d8c082b01117179843b5b4e617e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 144%;">
+<p>All my talk slides: <a href="https://mjordan.codes/speaking" target="_blank">mjordan.codes/speaking</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 21px;" data-block-id="0ecb8fde8a32398e4bd3ff32f419186f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h1>A Couple Nifty Links</h1>
+</div></div></section></section><section class="stack" data-id="290f39b747808cb08d43b91b224ccea5"><section data-id="ee48c01930122d2df440a1ba2a6ada96" data-background-image="animating-your-portfolio-to-awesome-with-gsap/cc08c6333c33e7d3516f85f0ba1033cd.jpg"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 439px; top: 437px;" data-block-id="fe44c3b9300830d7e65bfe29c44879f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 150%; transition-duration: 0.6s; transition-delay: 0.6s; background-color: rgb(118, 165, 175);" data-animation-type="fade-in">
+<h1>Why?</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="04bfea364c89cb0093de678a8027fc0f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div></section><section data-id="143162d4709d91c1ecc13eb6144007da"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 560px; top: 472px;" data-block-id="95838f8ea50089da4e6d90d5562b74c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<p>- <a href="https://material.io/design/motion/#principles" target="_blank">Material Design documents</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="7fef1974c4d4173e546d20add4a196d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 70px;" data-block-id="c46d7eefb702390f40e356e0b06db2b3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 175%;">
+<blockquote>
+<p>Motion <span style="color:#FFA500">guides</span> user attention in a smooth, unbroken fashion. When a UI changes appearance, motion <span style="color:#FFA500">provides continuity</span> between the placement and appearance of elements before and after a transition...</p>
+</blockquote>
+</div></div></section><section data-id="7fadf9481d20716d9cd94f72e143b4c7"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="a3d480b04a0f5d387697700c25bd8ee0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 250px;" data-block-id="ce8d23834e27a2571d0f715e58b2a420"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 145%;">
+<ul>
+	<li class="fragment" data-fragment-index="0">Relationships / Hierarchy</li>
+	<li class="fragment" data-fragment-index="1">Cause and Effect</li>
+	<li class="fragment" data-fragment-index="2">Feedback</li>
+	<li class="fragment" data-fragment-index="3">Guide Users</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 140px;" data-block-id="c729e335339b3e18640a8372b2c6d66f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h1>Benefits of Motion</h1>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 80px; top: 223px;" data-block-id="9082fc4484fd7eae2eed6353e18dee21"><div class="sl-block-content" data-line-x1="-300" data-line-y1="-24" data-line-x2="500" data-line-y2="-24" data-line-color="#e69138" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 14; transition-duration: 0.6s; transition-delay: 0.6s;" data-line-width="8px" data-animation-type="slide-right"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="800" height="1" viewbox="-300 -24 800 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-300" y1="-24" x2="494" y2="-24"></line><line stroke="#e69138" stroke-width="8" x1="-300" y1="-24" x2="494" y2="-24"></line><path style="fill: rgba(0,0,0,0);" stroke="#e69138" stroke-width="8" transform="translate(494,-24) rotate(90)" d="M 18 18 L 0 0 L -18 18"></path></svg></div></div></section><section data-id="4974fc76940bc70cfb317e1909b76cef"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="c2e72219208aaf956e68e1b130fda3a4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 0px; top: 42px;" data-block-id="d31ede7644ad4f7fbbc51c43dfe5f0e7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 175%; text-align: left;">
+<blockquote>
+<p>Motion helps make a UI expressive and easy to use...</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 280px; top: 179px;" data-block-id="345cb990285e8d3a7d5f48e6dd85c298"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>- <a href="https://material.io/design/motion/#principles" target="_blank">Material Design documents</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 151px; top: 305px;" data-block-id="b5d80b4b7e9dd9a269f9d49f9e296748"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 175%; text-align: right;">
+<blockquote>
+<p>Your portfolio is one of the only sites that you will build that is a complete creative expression of yourself with no constraints...</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 527px; left: 424px; top: 578px;" data-block-id="cfe8492a526b04e749d0e0b6a7c5ad49"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>- <a href="https://zen-of-programming.com/kickass-portfolio/" target="_blank">Ali Spittel: Building a Kickass Portfolio</a></p>
+</div></div></section></section><section class="stack" data-id="746858db1bfe8e39d7a68dd39edc6b6f"><section data-id="ad393c04ee3ba8f0070f7ee10c5af429" data-background-image="animating-your-portfolio-to-awesome-with-gsap/7d51012031059688095bfba41f986227.jpg"><div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="f5298bc70083e70e858b849b36600c99"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 240px; top: 277px;" data-block-id="7aa018b8489f80e34131c0c851de0b55"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; background-color: rgb(118, 165, 175);" data-fragment-index="0">
+<h1>When?</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 8px; top: 16px;" data-block-id="fef1ba956939c44b1bc8a2ff59614d68"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; background-color: rgb(118, 165, 175); text-align: left;">
+<p>  Now that we have the why....</p>
+</div></div></section><section data-id="51516f338ed3c0b09a11561af8da2ca8"><div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="edcc4ba8c911a39b4d96f4a7a01dc57f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 71px;" data-block-id="29de506779fed98dc3952751472360a0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2>a few things to keep in mind...</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 620px; left: 180px; top: 256px;" data-block-id="bdbb2a5b0fa92e6a0453feed9924b462"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ul>
+	<li>Less is more</li>
+	<li>Animations should have a clear purpose</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 560px; left: 240px; top: 334px;" data-block-id="cb156d70e00a3bba2caa82e45ce13518"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li>Inform / Communicate</li>
+	<li>Draw Attention</li>
+	<li>Appear modern, up-to-date, polished</li>
+	<li>Delight</li>
+</ul>
+</div></div></section></section><section class="stack" data-id="e91400febade9ef4195837da5c614c74"><section data-id="ccc59c7d508269750cc85632221b22ea" data-background-image="animating-your-portfolio-to-awesome-with-gsap/8042fac36d273c9a343b3029531abe91.jpg" data-background-color="rgb(97,77,68)"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="6d9ca13281abe297eb70f6fcbd1a05b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 8px; top: 16px;" data-block-id="853d7e895a288eb64b69e76733b7a318"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; background-color: rgb(118, 165, 175); text-align: left;">
+<p>  Now that we have the why and the when....</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 461px; top: 244px;" data-block-id="cf4b891ea9ed8e0448cf482891fdb98f"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; background-color: rgb(118, 165, 175);" data-fragment-index="0">
+<h1>How?</h1>
+</div></div></section><section data-id="827c590ed520c150306b92e9967dd838"><div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="43d7fb7a2c263b03e9fdf1dfb9903df0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 420px; left: 30px; top: 122px;" data-block-id="cf646920af663be56c91f24d931475c3"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; background-color: rgb(230, 145, 56); line-height: 1.95; font-size: 151%;" data-has-line-height="" data-fragment-index="0">
+<p>Style Calculations</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 420px; left: 181px; top: 262px;" data-block-id="b1e628d9a94d4ae2252773ce3f7be161"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; background-color: rgb(246, 178, 107); line-height: 1.95; font-size: 151%; color: rgb(136, 136, 136);" data-has-line-height="" data-fragment-index="1">
+<p>Layout</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 420px; left: 510px; top: 542px;" data-block-id="67febe21f8b9fc8125c9d7503d926522"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; background-color: rgb(252, 229, 205); line-height: 1.95; font-size: 151%; color: rgb(68, 68, 68);" data-has-line-height="" data-fragment-index="3">
+<p>Composite</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 420px; left: 350px; top: 402px;" data-block-id="78f44b75d81aa07805254a33fedc941a"><div class="sl-block-content fragment fade-right" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; background-color: rgb(249, 203, 156); line-height: 1.95; font-size: 151%; color: rgb(102, 102, 102);" data-has-line-height="" data-fragment-index="2">
+<p>Paint</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 0px;" data-block-id="d7a787087684b7161999f5335788957f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<h2 style="text-align: left;">How do browsers render style?</h2>
+</div></div></section><section data-id="42530e2cca80abb52941948dff649e12"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="1eb4a681f5373b6ca107bcd2626ac1c9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 104px;" data-block-id="0e12b6c6695d5456f883f7ed1e2a74dd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 171%;">
+<blockquote>
+<p>Modern browsers can animate <span style="color:#FFA500">four</span> things cheaply...</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 433px; left: 447px; top: 241px;" data-block-id="6cf3ae5478f5bc21932769ff11d81477"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>- <a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/" target="_blank">High Performance Animations</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 350px;" data-block-id="70f148de780bad29d2fbb1f7dd35620b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Position         transform: translate(npx, npx);</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>Scale             transform: scale(n);</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>Rotation         transform: rotate(ndeg);</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>Opacity          opacity: 0...1;</p>
+	</li>
+</ul>
+</div></div></section></section><section class="stack" data-id="f2e83bee28060ff6735d8df9ffea7ebc"><section data-id="205556988adb110dd603d7289e64a1b0"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 140px; height: auto;" data-block-id="63bcc89c156a6718e6dc8fb0ec2c9bb6"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui"><h3>CSS<br>
+</h3></div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 191px; height: auto;" data-block-id="0d3018cc29c19a61a397fda505f34aa4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
+<ul>
+	<li>Possible to animate transitions from one CSS configuration to another</li>
+	<li>Easy for simple one-shot transitions</li>
+	<li>Impossible to animate all the parts of the transform property in a distinct way</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 528px; top: 140px; height: auto;" data-block-id="708e9de0e93281500047a756e4fa803d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;">
+<h3>JavaScript*</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 528px; top: 191px; height: auto;" data-block-id="54b6e212d2ed8e15a69d5b284a943a73"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 14;">
+<ul>
+	<li>Good for multi-step, advanced animations</li>
+	<li>Gives you more control</li>
+	<li>Solves SVG cross-browser woes.</li>
+	<li>Plugins for fancy things</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 218px; left: 742px; top: 667px;" data-block-id="84b1874a071fdd531888f10c68e19cdb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 0px;" data-block-id="a38f6f14e7a8548e3251e6a7c9f9708f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<h2 style="text-align:left">CSS or JavaScript?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 480px; top: 591px;" data-block-id="31bcb64c2660a369d13443568e64166b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 64%; text-align: right;">
+<pre style="text-align: right;">*Specifically Greensock</pre>
+</div></div></section><section data-id="c2d74071565c62ec286fe007d17520e8"><div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="cb893b5457316c150cf60d0391bb2e25"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 0px;" data-block-id="f67ef56f74edd67392333aa97c9a2452"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2 style="text-align:left">A quick intro to CSS animations</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 508px; left: 452px; top: 211px;" data-block-id="47fdcca80b5b08bb75cee354919567b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 96%;">
+<ul>
+	<li>
+	<pre>animation-name</pre>
+	</li>
+	<li>
+	<pre>animation-duration</pre>
+	</li>
+	<li>
+	<pre>animation-timing-function</pre>
+	</li>
+	<li>
+	<pre>animation-iteration-count</pre>
+	</li>
+	<li>
+	<pre>animation-direction</pre>
+	</li>
+	<li>
+	<pre>animation-fill-mode</pre>
+	</li>
+	<li>
+	<pre>animation-play-state</pre>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 434px; left: 452px; top: 160px;" data-block-id="8bb579a4d59619b516387517092d1e41"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left;">
+<h3>Animation Properties</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 374px; left: 26px; top: 219px;" data-block-id="2e572f35e8384a98fb0443e5ff6912f2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 91%;">
+<ul>
+	<li>Defines the appearance of the animation</li>
+	<li>to &amp; from  or % to define steps</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 394px; left: 6px; top: 160px;" data-block-id="835b5f26d0273a352d5b0f2ba0384488"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: left;">
+<h3>@keyframes</h3>
+</div></div></section></section><section class="stack" data-id="5fbf5c7a6859db06272f66d40a7654c3"><section data-id="baa77fc54878a201d01634ccef218242"><div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="9a309f7af25d362558cf70a31cfd17d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 296px; left: 77px; top: 140px;" data-block-id="dddad441d0e8389ff04e6cef2382ff7f"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1200" data-natural-height="440" data-lazy-loaded="" data-src="animating-your-portfolio-to-awesome-with-gsap/6a9d1bff5e39d9e4609fae39ed2850a1.svg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 0px;" data-block-id="8242f6acf1dd73727db7d05fbd137111"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h2 style="text-align:left">And finally... GreenSock</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 177px; top: 452px;" data-block-id="a18ac6163783f4113560f3245f38a1a4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>GSAP: GreenSock Animation Platform</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 177px; top: 585px;" data-block-id="98d90a46f297e1de4e681b941465067c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 85%;">
+<p>*You can try all the plugins for free on <a href="https://codepen.io/GreenSock/pen/OPqpRJ" target="_blank">CodePen</a></p>
+</div></div></section><section data-id="4baf1a06c8c8f32092c403e27b1ed767"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="aa5c8be7354fc4cd6fdd71fef57b55e7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>TweenLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 209px; height: auto;" data-block-id="112b1ee1cac792f8eea85738b2baa8b1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
+<ul>
+	<li class="fragment" data-fragment-index="0">Foundation of GSAP</li>
+	<li class="fragment" data-fragment-index="1">Handles "tweening" 1 or more properties of any object over time.</li>
+</ul>
+
+<p> </p>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 528px; top: 105px; height: auto;" data-block-id="5a00e90114dc6b109e9c02f4a9fb84ff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 13;">
+<h2>TimelineLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 528px; top: 209px; height: auto;" data-block-id="8d317d7044e712e1f45216263f49a3c7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 14;">
+<ul>
+	<li class="fragment" data-fragment-index="3">Provides a simple way to create complex sequences of groups of tweens that you can control as a whole.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 80px; top: 600px;" data-block-id="2b72a96102eda0e49e888cc71515759b"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left; font-size: 63%;" data-fragment-index="2">
+<p><a href="https://greensock.com/docs/TweenLite" target="_blank">tweenLite docs</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 400px; left: 560px; top: 600px;" data-block-id="43d6c6f9a498f8321b818afed23f3a12"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left; font-size: 63%;" data-fragment-index="4">
+<p><a href="https://greensock.com/timelinelite" target="_blank">timelineLite docs</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="a67d99a2947740d6e8fd31c6e7053bc2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div></section></section><section class="stack" data-id="01fc3ea3879dafaa819717cf6db9e6fa"><section data-id="3af1838e860602f9807d7ce46b8a808c"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="8d7a2702da97c2882c34d5aaf2c4ccae"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>TweenLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="03bac396d3515a3a666bfe242cac24a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 189px; left: 0px; top: 100px;" data-block-id="c2e8abc44d8b2d3720f663f3822c7012"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 13; font-size: 160%;"><pre class="none"><code data-line-numbers="">const box = document.getElementById('box')
+
+document.addEventListener('click', () =&gt; {
+  TweenLite.to(box, 1, {width: "200px", height: "200px"})
+})</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 80px; left: 877px; top: 289px;" data-block-id="5e387c16ef90a65d79e87c3148098bc2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 61%;">
+<p><a href="https://codepen.io/mjordancodes/pen/LKKeRE" target="_blank">codepen</a></p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 219px; top: 236px;" data-block-id="f9bf076809328d0e57643d0451adeba1"><div class="sl-block-content fragment" data-line-x1="-30" data-line-y1="-153" data-line-x2="-108" data-line-y2="4" data-line-color="#e69138" data-line-start-type="circle" data-line-end-type="line-arrow" style="z-index: 15;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="78" height="157" viewbox="-108 -153 78 157"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-31" y1="-150" x2="-107" y2="2"></line><line stroke="#e69138" stroke-width="2" x1="-31" y1="-150" x2="-107" y2="2"></line><path style="fill: rgba(0,0,0,0);" stroke="#e69138" stroke-width="2" transform="translate(-107,2) rotate(206.419)" d="M 6 6 L 0 0 L -6 6"></path><ellipse rx="3" ry="3" cx="-31" cy="-150" fill="#e69138"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 297px; left: 12px; top: 393px;" data-block-id="9c318b9983e585f2b79e5aaed545c2a5"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left;" data-fragment-index="0">
+<p>The object you want to change / animate</p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 359px; top: 236px;" data-block-id="90d694efd40f2e6bfef1745730018458"><div class="sl-block-content fragment" data-line-x1="-30" data-line-y1="-153" data-line-x2="-30" data-line-y2="127" data-line-color="#e69138" data-line-start-type="circle" data-line-end-type="line-arrow" style="z-index: 17;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="280" viewbox="-30 -153 1 280"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-30" y1="-150" x2="-30" y2="125"></line><line stroke="#e69138" stroke-width="2" x1="-30" y1="-150" x2="-30" y2="125"></line><path style="fill: rgba(0,0,0,0);" stroke="#e69138" stroke-width="2" transform="translate(-30,125) rotate(180)" d="M 6 6 L 0 0 L -6 6"></path><ellipse rx="3" ry="3" cx="-30" cy="-150" fill="#e69138"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 297px; left: 211px; top: 526px;" data-block-id="22f8ee6632f97b2b3d3942cbb268ea48"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: left;" data-fragment-index="1">
+<p>How many seconds it should take to change</p>
+</div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 1px; min-height: 1px; left: 444px; top: 236px;" data-block-id="a21b89f42a3789e4ef4eafa7b4935fba"><div class="sl-block-content fragment" data-line-x1="-42" data-line-y1="-166" data-line-x2="59" data-line-y2="-26" data-line-color="#e69138" data-line-start-type="circle" data-line-end-type="line-arrow" style="z-index: 19;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="101" height="140" viewbox="-42 -166 101 140"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="-40" y1="-164" x2="58" y2="-28"></line><line stroke="#e69138" stroke-width="2" x1="-40" y1="-164" x2="58" y2="-28"></line><path style="fill: rgba(0,0,0,0);" stroke="#e69138" stroke-width="2" transform="translate(58,-28) rotate(144.192)" d="M 6 6 L 0 0 L -6 6"></path><ellipse rx="3" ry="3" cx="-40" cy="-164" fill="#e69138"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 488px; left: 429px; top: 386px;" data-block-id="563c46d898b53d0b56d8c1c28f8d4666"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; text-align: left;" data-fragment-index="2">
+<p>What the properties should look like at the end of the animation</p>
+</div></div></section><section data-id="3b1db52076a6cfcd96625a8782e8dbcf"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="e27911936092e9901181e99927c1551f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>TweenLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="ceb213db3eaedcdb89dc7b09465e99d7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 873px; top: 407px;" data-block-id="ba6039e812e2c012c64b1f69453729ae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 61%;">
+<p><a href="https://codepen.io/mjordancodes/pen/LKKeRE" target="_blank">codepen</a></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 108px; left: 0px; top: 291px;" data-block-id="d6c076c82d359fb5625a8a7cc95cedf8"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 13; font-size: 154%;"><pre class="javascript"><code data-line-numbers="">document.addEventListener('click', () =&gt; {
+    TweenLite.to('#box', 1, {width: "+=10", height: "+=10"})
+})</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 369px; left: 296px; top: 490px;" data-block-id="c6e3d8fbb3f50d439b5af4d0dc4f68eb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 91%;">
+<p style="text-align: left;">Note: Just add the  <a href="https://greensock.com/docs/Plugins/CSSPlugin" target="_blank">CSSPlugin</a> to be able to animate almost any css-related property</p>
+</div></div></section><section data-id="9b8cb7692591a5b5d5dbf5ede5be5b18"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="2f7fbf7070a1952656bf39c46d35fb57"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>TweenLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="6fe73a88084e23c837075e640d34102d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 210px;" data-block-id="6dfc99f1e137244ccef8ce65fa02db00"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ul>
+	<li>TweenLite.to()</li>
+	<li class="fragment" data-fragment-index="0">TweenLite.from()</li>
+	<li class="fragment" data-fragment-index="1">TweenLite.fromTo()</li>
+	<li class="fragment" data-fragment-index="2">TweenLite.set</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 407px;" data-block-id="7e61f063c5cbbf8ec7f8c08e94702b65"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="3">
+<p>... and a whole lot more!</p>
+</div></div></section></section><section class="stack" data-id="bca613934ab577c1f4efc212b1177c12"><section data-id="df2f5f7f7653e0df2a4cb3981db796e6"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="2ca9dc1475fbbbc618d6ff925bcfde00"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>TimelineLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="7362d0db2c234fffe4a1046971052150"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 309px; left: 0px; top: 98px;" data-block-id="5e438ac564acabaed2c132b2fa858ccb"><div class="sl-block-content notranslate" data-highlight-theme="zenburn" data-code-frame="none" style="z-index: 12; font-size: 160%;"><pre class="none"><code data-line-numbers="">const box = document.getElementById('box')
+
+let tl = new TimelineLite();
+
+tl.to(box, 1, {x:200})
+  .to(box, 1, {y:200})
+  .to(box, 1, {backgroundColor: "#BADA55"})
+
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 420px;" data-block-id="bcd3e54b173f022b4bb560c6abd3ff04"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 61%;">
+<p><a href="https://codepen.io/mjordancodes/pen/1a9a2409695a4f17b75d4fea9d8c90ac" target="_blank">codepen</a></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 454px; height: 38px; left: 38px; top: 165px;" data-block-id="07a74af7c47e4eb5351196968e0400ed"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#e69138" data-shape-stroke-width="3px" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 454 38"><defs><clippath id="shape-mask-1-1563313718735"><rect width="454" height="38" rx="0" ry="0"></rect></clippath></defs><rect width="454" height="38" rx="0" ry="0" clip-path="url(#shape-mask-1-1563313718735)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#e69138" stroke-width="6"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 142px; top: 451px;" data-block-id="ff49238cd48322cac0f61ca64a7456d3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<ul>
+	<li class="fragment" data-fragment-index="1">Create a new Timeline object</li>
+	<li class="fragment" data-fragment-index="3">Chain a bunch of animations together</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 714px; height: 103px; left: 38px; top: 229px;" data-block-id="ee702306efea0bd555ba699c313b924c"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 17;" data-shape-stroke-color="#e69138" data-shape-stroke-width="3px" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 714 103"><defs><clippath id="shape-mask-2-1563313804005"><rect width="714" height="103" rx="0" ry="0"></rect></clippath></defs><rect width="714" height="103" rx="0" ry="0" clip-path="url(#shape-mask-2-1563313804005)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#e69138" stroke-width="6"></rect></svg></div></div></section><section data-id="1869f076ac19abe745b0cd78ac5d4456"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="96c333fd5e5a25af68152854a0e5ba05"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>TimelineLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="e594c081b799f5cd1db964d27b8d397d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 377px;" data-block-id="fa2c7a55341c0667af93b75d88cee95b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li class="fragment" data-fragment-index="0">tl.play()</li>
+	<li class="fragment" data-fragment-index="1">tl.pause()</li>
+	<li class="fragment" data-fragment-index="2">tl.resume()</li>
+	<li class="fragment" data-fragment-index="3">tl.seek(1.5)</li>
+	<li class="fragment" data-fragment-index="4">tl.reverse()</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 170px; top: 140px;" data-block-id="5c7ff8bfe9f798dd6603afddc286bdca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 153%;">
+<p>TimelineLite allows you to control the animation as a whole.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 440px; top: 606px;" data-block-id="c67335486f834cdfdacd5df8986e9ed5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 61%;">
+<p><a href="https://codepen.io/mjordancodes/pen/86ea1e0d4d537f42aa47044cf43b311a" target="_blank">codepen</a></p>
+</div></div></section><section data-id="115cf17b6dec4d519179ce1d9d8099ca"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="4557a9b28752fed37724f3bb7949b93c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>TimelineLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="be3d29449d9a2ba23b87358c320d57a4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 440px; top: 478px;" data-block-id="c1e63509898c0d80c821da179850bb44"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 61%;">
+<p><a href="https://codepen.io/mjordancodes/pen/2f6876098bdee9fa88bbf41956d395f3?editors=1010" target="_blank">codepen</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 261px;" data-block-id="56dad42d8fbe6ca5d4fa9b9cca0a8487"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 153%;">
+<p>You can also use <a href="https://greensock.com/position-parameter" target="_blank">Position Parameters</a> to make things happen at the same time.</p>
+</div></div></section><section data-id="f95d49cc42c623b072ade732711695ef"><div class="sl-block" data-block-type="text" style="width: 384px; left: 0px; top: 0px; height: auto;" data-block-id="59b80de31c3280a04854c5573bafa4c0"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>TimelineLite</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="2d987930a3c9fd445fbe7cc5700f0f83"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 440px; top: 478px;" data-block-id="fac3533624a816f38bf1e3b1650674de"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 61%;">
+<p><a href="https://codepen.io/mjordancodes/pen/2f6876098bdee9fa88bbf41956d395f3?editors=1010" target="_blank">codepen</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 261px;" data-block-id="da4b54bdf7422501ddeaf106148805e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 153%;">
+<p>tl<a href="https://greensock.com/docs/TimelineLite/staggerTo" target="_blank">.staggerTo()</a> allows you to loop through an array of objects and stagger them</p>
+</div></div></section></section><section data-id="0521bc083b3dda97ba2d330b95d97f52"><div class="sl-block" data-block-type="text" style="width: 774px; left: 0px; top: 0px; height: auto;" data-block-id="db4be8fba87a81b0ea27e4161c83e9e6"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Some Plugins if you join the club</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218px; left: 742px; top: 667px;" data-block-id="468fac7d0e4c124285f249a9027f2cd7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 91%;">
+<pre>@mJordanCodes</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 272px;" data-block-id="d88d4a7a2024f59291041a27f79517ed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+<a href="https://greensock.com/morphSVG" target="_blank">MorphSVG</a> - <a href="https://codepen.io/chrisgannon/pen/JYRYgM?editors=001" target="_blank">CodePen</a>
+</li>
+	<li class="fragment" data-fragment-index="1">
+<a href="https://greensock.com/SplitText" target="_blank">SplitText</a> - <a href="https://codepen.io/GreenSock/pen/FqrEv" target="_blank">CodePen</a>
+</li>
+	<li class="fragment" data-fragment-index="2">
+<a href="https://greensock.com/ScrambleTextPlugin" target="_blank">ScrambleText</a> - <a href="https://codepen.io/GreenSock/pen/dIBbw" target="_blank">CodePen</a>
+</li>
+	<li class="fragment" data-fragment-index="3">
+<a href="https://greensock.com/drawSVG" target="_blank">DrawSVG</a> - <a href="https://codepen.io/AlaricBaraou/pen/vWxPyp" target="_blank">CodePen</a>
+</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 560px;" data-block-id="cb4ca248107a3c2351d71ce3df0037ba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>But you can play for free on <a href="https://codepen.io/GreenSock/pen/OPqpRJ" target="_blank">CodePen</a>!</p>
+</div></div></section><section class="stack" data-id="f1c8145ba0653fe698146a186d8d9c5b"><section data-id="579e600fd9705cb29b7a13b32b158355"><div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 11px; top: 0px;" data-block-id="865bbba1d68c31f557a135454beb58f6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2 style="text-align:left">Resources</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 85px;" data-block-id="76008a164a8a13c7bc5110249d9732af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Google Material Design Docs: <a href="https://material.io/design/motion/#principles" target="_blank">Understanding Motion</a>
+</li>
+	<li>Ali Spittel: <a href="https://zen-of-programming.com/kickass-portfolio/" target="_blank">Building a Kickass Portfolio</a>
+</li>
+	<li>HTML5Rocks: <a href="https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/" target="_blank">High Performance Animations</a>
+</li>
+	<li>Google Developer Docs: <a href="https://developers.google.com/web/fundamentals/performance/rendering/" target="_blank">Rendering Performance</a>
+</li>
+	<li>Mozilla MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">Using CSS Animations</a>
+</li>
+	<li>CSS-Tricks: <a href="https://css-tricks.com/myth-busting-css-animations-vs-javascript/" target="_blank">Myth Busting: CSS Animations vs. JavaScript</a>
+</li>
+	<li>Egghead.io: <a href="https://egghead.io/courses/create-amazing-animations-with-greensock" target="_blank">Create Amazing Animations with GreenSock</a>
+</li>
+	<li>GreenSock: <a href="https://greensock.com/get-started-js" target="_blank">Getting Started with GSAP</a>
+</li>
+	<li>FrontendMasters: <a href="https://frontendmasters.com/courses/svg-essentials-animation/" target="_blank">SVG Essentials &amp; Animation</a>
+</li>
+	<li>O'Reilly: <a href="https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702" target="_blank">SVG Animations by Sarah Drasner</a>
+</li>
+	<li>DesignCode.io: <a href="https://designcode.io/svg-intro" target="_blank">Intro to SVG and GreenSock</a>
+</li>
+	<li>IHateTomatoes.net: <a href="https://ihatetomatoes.net/product/greensock-101/" target="_blank">GreenSock101</a>
+</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 86px; top: 327px;" data-block-id="fac424a4f4073b4628e157fdd3f5a8b4"><div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 86px; top: 405px;" data-block-id="e1b623e98449d634b42fd792acd9277c"><div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 86px; top: 484px;" data-block-id="660e2ddf9670159e542f25949e851f0e"><div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 772px; top: 614px;" data-block-id="135749a04b880ecf2e7062afe0ff7a51"><div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 139px; left: 810px; top: 614px;" data-block-id="4843c98359e4d3e40651f8d8b3ca7e5e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 63%;">
+<p style="text-align: left;">Class / Tutorial</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 86px; top: 446px;" data-block-id="7a97d1264e8e62363915087f31d04865"><div class="sl-block-content" data-shape-type="symbol-heart-fill" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M16 5.844c-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891-2.984 0-5.5 1.578-7.113 3.844z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 772px; top: 656px;" data-block-id="3cbf39bba62a0fb65ae3bb0b437848cc"><div class="sl-block-content" data-shape-type="symbol-heart-fill" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M16 5.844c-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891-2.984 0-5.5 1.578-7.113 3.844z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 139px; left: 810px; top: 656px;" data-block-id="43a3b0ff123d3094f09f41ca764eef93"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 63%;">
+<p style="text-align: left;">Book</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 30px; height: 30px; left: 86px; top: 523px;" data-block-id="693d0ae10e104b992eb465ad9794185d"><div class="sl-block-content" data-shape-type="symbol-heart-stroke" data-shape-fill-color="rgb(0, 255, 0)" data-shape-stretch="true" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 2 32 28"><g class="shape-element" fill="rgb(0, 255, 0)"><path d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path></g></svg></div></div></section><section data-id="6eabe7ab4cbfe0666af6784b1a48fb9d"><div class="sl-block" data-block-type="text" style="height: auto; width: 789px; left: 0px; top: 0px;" data-block-id="4eeb87e3c54533e3180eb417f82c9f58"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2 style="text-align:left">Awesome People in the Space</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 85px;" data-block-id="b94cf6361cd3d1abe3604bd06a138fc2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Sarah Drasner <a href="https://twitter.com/sarah_edo" target="_blank">@sarah_edo</a>
+</li>
+	<li>Val Head <a href="https://twitter.com/vlh" target="_blank">@vlh</a>
+</li>
+	<li>Christina Gorton <a href="https://twitter.com/coffeecraftcode" target="_blank">@coffeecraftcode</a>
+</li>
+</ul>
+</div></div></section></section><section data-id="8b2bb19fb65a945ad61ea1c09760d533"><div class="sl-block" data-block-type="image" style="width: 192px; height: 648px; left: 737px; top: 26px; min-width: 4px; min-height: 4px;" data-block-id="611c66f567325d6768142a12bb7b733c"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="400" data-natural-height="1350" data-lazy-loaded="" data-src="animating-your-portfolio-to-awesome-with-gsap/775e10480f397ca84451515f3f35c909.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 620px; left: 80px; top: 41px;" data-block-id="c569b80b9a192733609d23bb58bba7ec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h1>Thanks for Listening!</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 110px; top: 319px;" data-block-id="b62ed264449f95435b1127a7c54f7498"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><span style="font-size:0.7em"><a href="https://twitter.com/mjordancodes" target="_blank">Twitter</a> / <a href="https://github.com/mjordancodes" target="_blank">Github</a> / <a href="https://www.instagram.com/mjordancodes/" target="_blank">Instagram</a> / <a href="https://codepen.io/mjordancodes/#" target="_blank">Codepen</a></span></p>
+
+<p>@mJordanCodes</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 110px; top: 439px;" data-block-id="db17d2f080587d55b618f8a22fba7a74"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p><span style="font-size:0.7em">email:</span> hi@mJordan.codes</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 110px; top: 509px;" data-block-id="7f7779d89ddb7cddde7a73b9c865b3f9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p><span style="font-size:0.7em">website:</span> <a href="https://mjordan.codes/" target="_blank">mJordan.codes</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 110px; top: 178px;" data-block-id="c28c0f324e19bb097ce8e10cbe55d86a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<p><span style="font-size:0.9em"><em>Did you know? </em></span></p>
+
+<p><span style="font-size:1.4em">I'm available for hire!</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 357px; left: 232px; top: 568px;" data-block-id="8af68ffc9f95ca6c093b3bcbf1cc13b3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 99%;">
+<p><a href="https://mjordan.codes/talk/greensock-portfolio" target="_blank">Slides</a>: bit.ly/GSAP-slides</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 530px; left: 145px; top: 607px;" data-block-id="b19e3e8bb5e1e9fe413756ecf16b8781"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 99%;">
+<p><a href="http://bit.ly/GSAP-examples" target="_blank">Code Examples</a>: bit.ly/GSAP-examples</p>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1553629,"slug":"animating-your-portfolio-to-awesome-with-gsap","title":"Animating your Portfolio to Awesome with GSAP","description":"","width":960,"height":700,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/a87b99cb9a38404e545728cde420f17e/thumb.jpg?1562643571","view_count":0,"user":{"id":786413,"username":"mjordancodes","name":"mJordan Brady","description":"I’m mJordan, a creative front end developer. I love learning and sharing what I know with the Portland Tech Community. I am a leader/organizer for several meetup groups here including Women Who Code Portland and PDXNode. ","thumbnail_url":"https://www.gravatar.com/avatar/85c521adf914593cb1055818e553efb4?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":true,"lite":false,"team_id":null,"settings":{"id":637609,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"josefine","theme_color":"mint-beige","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":36,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":3,"data_updated_at":1563322340440,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{"83cf232740a26ffc14c74d54211a9bdf":"","ee48c01930122d2df440a1ba2a6ada96":"Why should you spend time adding animations to your portfolio or any other project you might be working on?","143162d4709d91c1ecc13eb6144007da":"","7fadf9481d20716d9cd94f72e143b4c7":"- Show how elements relate to one another (Hierarchy)\n- Unites cause and effect. Like pressing a button opens the menu\n- Provides feedback \u0026 shows that something is happening. (Loading, submitting a form...)\n- Teach / guide users to perform specific actions","4974fc76940bc70cfb317e1909b76cef":"- Interactivity and animation\n- Grab people's attention\n- People stay on the site in order to interact with it. \n- Makes the site stand out and then people remember it. (GitHub event....)","ccc59c7d508269750cc85632221b22ea":"","42530e2cca80abb52941948dff649e12":"Look at how browsers render a webpage... ","827c590ed520c150306b92e9967dd838":"- Style calculations. This is the process of figuring out which CSS rules apply to which elements based on matching selectors, for example, .headline or .nav \u003e .nav__item. From there, once rules are known, they are applied and the final styles for each element are calculated.\n- Layout. Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen. The web’s layout model means that one element can affect others, for example the width of the \u003cbody\u003e element typically affects its children’s widths and so on all the way up and down the tree, so the process can be quite involved for the browser.\n- Paint. Painting is the process of filling in pixels. It involves drawing out text, colors, images, borders, and shadows, essentially every visual part of the elements. The drawing is typically done onto multiple surfaces, often called layers.\n- Compositing. Since the parts of the page were drawn into potentially multiple layers they need to be drawn to the screen in the correct order so that the page renders correctly. This is especially important for elements that overlap another, since a mistake could result in one element appearing over the top of another incorrectly.\n","ad393c04ee3ba8f0070f7ee10c5af429":"","51516f338ed3c0b09a11561af8da2ca8":"","b2dbc5c00de3b116f60dcebe51197a9f":"","205556988adb110dd603d7289e64a1b0":"","c2d74071565c62ec286fe007d17520e8":"","baa77fc54878a201d01634ccef218242":"","ad5637d22831ca2f078e487defaa536c":"","6eabe7ab4cbfe0666af6784b1a48fb9d":"","4baf1a06c8c8f32092c403e27b1ed767":"","df7f52e193efbd520b1eb8ff15f79765":"","3af1838e860602f9807d7ce46b8a808c":"","3b1db52076a6cfcd96625a8782e8dbcf":"One of the most convenient things about the CSSPlugin is that it greatly simplifies transforms (rotation, scaleX, scaleY, scale, skewX, skewY, x, y, xPercent and yPercent) in the various browsers including IE back through version 6! No need to mess with various browser prefixes or funky matrix filters in IE. GSAP exclusive: they even work on SVG elements! ","9b8cb7692591a5b5d5dbf5ede5be5b18":"","579e600fd9705cb29b7a13b32b158355":"","317b74ee1c2b17b8f1d25f093181c67e":"","df2f5f7f7653e0df2a4cb3981db796e6":"","1869f076ac19abe745b0cd78ac5d4456":"","115cf17b6dec4d519179ce1d9d8099ca":"","f95d49cc42c623b072ade732711695ef":"","9e8d3ffd1195db994731c849a8f044ac":"","8b2bb19fb65a945ad61ea1c09760d533":"","0521bc083b3dda97ba2d330b95d97f52":"","efe32b6a4d1536f20200f8d016f2d1e7":"","a57dc88c8293178451f98e47cb6abe15":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				maxScale: 1,
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js' },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/reveal-plugins/zoom/zoom.js', async: true }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
